@@ -1,0 +1,12 @@
+{
+  "name": "notify",
+  "private": true,
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
+    "husky": "^9.1.7"
+  }
+}
