@@ -11,7 +11,7 @@ pub struct AppConfig {
 
 impl Default for AppConfig {
     fn default() -> Self {
-        let db_path = PathBuf::from("notify.sqlite3");
+        let db_path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("notify.sqlite3");
         Self {
             bind_addr: "127.0.0.1:3000".parse().expect("valid default bind"),
             database_url: format!("sqlite://{}", db_path.display()),

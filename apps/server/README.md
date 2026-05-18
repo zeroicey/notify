@@ -11,6 +11,7 @@
 Start the server:
 
 ```bash
+cd apps/server
 cargo run
 ```
 
@@ -27,6 +28,7 @@ Default runtime values:
 Use environment variables when you need a different port or database file:
 
 ```bash
+cd apps/server
 NOTIFY_BIND_ADDR=127.0.0.1:3100 \
 NOTIFY_DATABASE_URL=sqlite:///tmp/notify.sqlite3 \
 cargo run
